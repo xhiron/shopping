@@ -6,8 +6,9 @@ import { auth } from "../../firebase/firebase.utils"
 import { connect } from "react-redux"
 import CartIcon from "../cart-icon/CartIcon"
 import CartDropdown from "../cart-dropdown/CartDropdown"
-import { selectCartHidden, selectCurrentUser } from "../../redux/user/user.selector"
+import { selectCurrentUser } from "../../redux/user/user.selector"
 import { createStructuredSelector } from "reselect"
+import { selectCartHidden } from "../../redux/cart/cart.selectors"
 
 const Header = ({ currentUser, hidden }) => (
   <div className="header">
